@@ -7,18 +7,15 @@ add dummy data into tables  command : npm run seed.
 run server   command : npm start
 APIs end points :
 	signup users    :  “http://localhost:4000/signup”
-		payload:    username  :  ””
-					password  :  ”” 
+	payload:    username  :  ””
+			    password  :  ”” 
 		
 	Signin users    :  “http://localhost:4000/signup”
-				
-		payload:    username  :  ””
-					password  :  ”” 
+	payload:    username  :  ””
+			    password  :  ”” 
 
 	userslist       :  “http://localhost:4000/userlist”
-				
-		payload:    cookie
+	payload:    cookie
 
 	logout          :  “http://localhost:4000/logout”
-					
-		payload:    cookie
+	payload:    cookie
