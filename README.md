@@ -1,11 +1,11 @@
 # W5_Test
 
-install node packages  command : npm i
-data base connection string in env file  DB_URL=” ”
-create tables in postgresSQL  command : npm run migrate
-add dummy data into tables  command : npm run seed.
-run server   command : npm start
-APIs end points :
+* install node packages  command : npm i
+* data base connection string in env file  DB_URL=”postgres://<username>:<password>@localhost:5432/testdb”
+* create tables in postgresSQL  command : npm run migrate
+* add dummy data into tables  command : npm run seed.
+* run server command : npm start
+* APIs end points :
 	signup users    :  “http://localhost:4000/signup”
 	payload:    username  :  ””
 			    password  :  ”” 
@@ -19,3 +19,5 @@ APIs end points :
 
 	logout          :  “http://localhost:4000/logout”
 	payload:    cookie
+
+* run test command : npm test	

@@ -9,7 +9,7 @@ describe("PostgreSQL Connection Test", async () => {
     beforeEach(async () => {
         db = knex({
             client: "pg",
-            connection: "postgres://pgadmin:Suraj@123@127.0.0.1:5432/testdb",
+            connection: "postgres://<username>:<password>@127.0.0.1:5432/testdb",
         });
     });
 
