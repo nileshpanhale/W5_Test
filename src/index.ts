@@ -1,2 +1,2 @@
-import { init } from "./app"; 
-init();
+import { init } from "./app";
+const x = init().then((x) => { });

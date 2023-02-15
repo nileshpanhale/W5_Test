@@ -1,10 +1,9 @@
-import { Server } from "@hapi/hapi";
-import { userController } from "./authController";
+import userController from "./authController";
 const Joi = require("joi");
 
 export class userRoutes {
   protected userController = new userController();
- 
+
   constructor(userRoute) {
     userRoute = userRoute;
     userRoute.route({

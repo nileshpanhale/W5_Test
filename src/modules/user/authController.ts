@@ -6,8 +6,8 @@ import { knexConfig } from "../../db";
 import { User } from "../../modelsTypes/databaseTypes";
 
 
-export class userController {
-  constructor() {}
+export default class userController {
+  constructor() { }
   public signIn = async (request, h: ResponseToolkit) => {
     try {
       console.log(request.payload.username);

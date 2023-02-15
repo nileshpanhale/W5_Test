@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
 dotenv.config();
-console.log("env",process.env["DB_URL"] );
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }

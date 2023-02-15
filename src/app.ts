@@ -1,11 +1,9 @@
-
 import { Server } from "@hapi/hapi";
 const db = require("./db");
-// import { routes } from "./modules/user/userRoute/routes";
-import {userRoutes} from "./modules/user/userRoutes";
+import { userRoutes } from "./modules/user/userRoutes";
 
 export const init = async () => {
-  const server:Server = new Server({
+  const server: Server = new Server({
     port: 4000,
     host: "localhost",
   });
@@ -21,19 +19,16 @@ export const init = async () => {
       ttl: 30 * 60,
     },
   });
-    new userRoutes(server);
+  new userRoutes(server);
   await server.decorate("request", "database", db);
 
-  
-  server.start();
-  console.log("server started at port " , server.info.uri);
-};
 
-// console.log("Server running on %s", server.info.uri);
+  server.start();
+  console.log("server started at port ", server.info.uri);
+  return server
+};
 
 process.on("unhandledRejection", (err) => {
   console.log(err);
   process.exit(1);
 });
-
-
